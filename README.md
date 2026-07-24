@@ -21,6 +21,6 @@ and the CI pipeline when that's what the task needs.
 
 ### Contact
 
-Based in St. Petersburg, working remote · English B2 · open to relocation
+Based in Estonia, working remote · English B2 · open to relocation
 
 [Telegram](https://t.me/sobolpe) · sobol4156@gmail.com
