@@ -21,6 +21,6 @@ and the CI pipeline when that's what the task needs.
 
 ### Contact
 
-Based in Estonia, working remote · English B2
+Working remote · English B2 · open to relocation or EU-hours contract work
 
 [Telegram](https://t.me/sobolpe) · sobol4156@gmail.com
