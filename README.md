@@ -1,12 +1,13 @@
 ## Alexander Kolesnik
 
-Senior Frontend Engineer, 6 years in production. I lead frontend work on [AI/ML API](https://aimlapi.com)
-at Pandaverse OÜ — a platform that serves 1000+ AI models behind a single OpenAI-compatible endpoint.
+Senior Fullstack Engineer, 6 years in production. I lead frontend work on [AI/ML API](https://aimlapi.com)
+at Boiler Labs — a platform that serves 1000+ AI models behind a single OpenAI-compatible endpoint.
 
+Frontend is where I'm deepest — Vue 3 / Nuxt 3 and TypeScript — but I own features end to end: the
+NestJS service, the Postgres migration and the CI pipeline are mine when that's what shipping takes.
 Most of my work is the unglamorous half of a product people actually pay for: SSR that doesn't flicker,
 checkout flows that survive real payment providers, and pages that stay fast when the API doesn't
-cooperate. I'm comfortable past the frontend boundary — I'll write the NestJS service, the migration
-and the CI pipeline when that's what the task needs.
+cooperate.
 
 **Stack** — TypeScript · Vue 3 / Nuxt 3 · React / Next.js · NestJS · PostgreSQL · ClickHouse · Docker · GitHub Actions
 
@@ -20,7 +21,5 @@ and the CI pipeline when that's what the task needs.
   AWS Secret Manager trigger authentication handler.
 
 ### Contact
-
-Working remote · English B2 · open to relocation or EU-hours contract work
 
 [Telegram](https://t.me/sobolpe) · sobol4156@gmail.com
