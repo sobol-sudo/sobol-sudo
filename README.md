@@ -13,12 +13,11 @@ cooperate.
 
 ### Open source
 
-- [**recharts** #7582](https://github.com/recharts/recharts/pull/7582) — fixed bar spacing breaking when
-  `maxBarSize` clamps the computed width. The issue had been open for 4.5 years.
-- [**fastify** #6872](https://github.com/fastify/fastify/pull/6872) — corrected contradictory
-  `requestIdHeader` documentation.
-- [**keda** #7932](https://github.com/kedacore/keda/pull/7932) — guarded a nil-credential crash in the
-  AWS Secret Manager trigger authentication handler.
+- [**recharts** #7582](https://github.com/recharts/recharts/pull/7582) — merged. Bars ignored the
+  requested `barGap` whenever `maxBarSize` clamped the computed width. Open for 4.5 years; fixed with
+  unit tests and a visual-regression case.
+- [**fastify** #6872](https://github.com/fastify/fastify/pull/6872) — merged. The `requestIdHeader`
+  docs stated two contradictory defaults; traced the conflict to a v4-into-v5 merge and corrected it.
 
 ### Contact
 
