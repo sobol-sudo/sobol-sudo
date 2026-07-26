@@ -18,6 +18,8 @@ cooperate.
   unit tests and a visual-regression case.
 - [**fastify** #6872](https://github.com/fastify/fastify/pull/6872) — merged. The `requestIdHeader`
   docs stated two contradictory defaults; traced the conflict to a v4-into-v5 merge and corrected it.
+- [**openlayers** #17576](https://github.com/openlayers/openlayers/pull/17576) — merged. `offsetX` was
+  silently dropped for text placed along a line. Open for 20 months; fixed with unit and rendering tests.
 
 ### Contact
 
