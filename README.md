@@ -21,7 +21,9 @@ cooperate.
 - [**openlayers** #17576](https://github.com/openlayers/openlayers/pull/17576) — merged. `offsetX` was
   silently dropped for text placed along a line. Open for 20 months; fixed with unit and rendering tests.
 - [**storybook** #35589](https://github.com/storybookjs/storybook/pull/35589) — merged. The `next/link`
-  mock ignored `trailingSlash`, so Storybook rendered hrefs the running app never would.
+  mock ignored `trailingSlash`, so Storybook rendered hrefs the running app never would. A maintainer
+  spotted that the Vite plugin ships its own copy of the same mock, so I closed that half too in
+  [vite-plugin-storybook-nextjs #136](https://github.com/storybookjs/vite-plugin-storybook-nextjs/pull/136).
 
 ### Contact
 
