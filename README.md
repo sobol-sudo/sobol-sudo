@@ -20,6 +20,8 @@ cooperate.
   docs stated two contradictory defaults; traced the conflict to a v4-into-v5 merge and corrected it.
 - [**openlayers** #17576](https://github.com/openlayers/openlayers/pull/17576) — merged. `offsetX` was
   silently dropped for text placed along a line. Open for 20 months; fixed with unit and rendering tests.
+- [**storybook** #35589](https://github.com/storybookjs/storybook/pull/35589) — merged. The `next/link`
+  mock ignored `trailingSlash`, so Storybook rendered hrefs the running app never would.
 
 ### Contact
 
