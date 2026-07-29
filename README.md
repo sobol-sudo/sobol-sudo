@@ -18,8 +18,10 @@ cooperate.
   unit tests and a visual-regression case.
 - [**fastify** #6872](https://github.com/fastify/fastify/pull/6872) — merged. The `requestIdHeader`
   docs stated two contradictory defaults; traced the conflict to a v4-into-v5 merge and corrected it.
-- [**openlayers** #17576](https://github.com/openlayers/openlayers/pull/17576) — merged. `offsetX` was
-  silently dropped for text placed along a line. Open for 20 months; fixed with unit and rendering tests.
+- [**openlayers**](https://github.com/openlayers/openlayers/pull/17576) — two merged. `offsetX` was
+  silently dropped for text placed along a line (open 20 months), and
+  [WFS 2.0.0 transactions](https://github.com/openlayers/openlayers/pull/17583) wrote a filter element
+  that only exists in WFS 1.x, which GeoServer rejects.
 - [**storybook** #35589](https://github.com/storybookjs/storybook/pull/35589) — merged. The `next/link`
   mock ignored `trailingSlash`, so Storybook rendered hrefs the running app never would. A maintainer
   spotted that the Vite plugin ships its own copy of the same mock, so I closed that half too in
