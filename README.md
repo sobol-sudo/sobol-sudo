@@ -31,22 +31,6 @@ cooperate.
   valid took the operator down. A maintainer ran the AWS Secret Manager e2e suite against real
   infrastructure before merging.
 
-Currently open:
-
-- [**TanStack Query** #11128](https://github.com/TanStack/query/pull/11128) — a thenable kept for
-  React's optimistic unwrapping could end up reporting `rejected` while the promise had fulfilled,
-  because a retained `reject` bypassed the guard that clears it. Adds the missing unit suite too.
-- [**nitro** #4488](https://github.com/nitrojs/nitro/pull/4488) and
-  [#4491](https://github.com/nitrojs/nitro/pull/4491) — two prerender routes can resolve to one output
-  file, which Nuxt generates on its own for SPA builds. The writes were neither atomic nor deduplicated,
-  so the file could ship torn between two renders — the write itself tore in 172 of 200 runs in isolation.
-- [**vueuse** #5554](https://github.com/vueuse/vueuse/pull/5554) — `useRouteParams` and `useRouteQuery`
-  share a per-router write queue, and a disposed scope left its pending write behind for an unrelated
-  navigation to apply.
-- [**react-spectrum** #10366](https://github.com/adobe/react-spectrum/pull/10366) — approved, awaiting a
-  second reviewer. Three types appear structurally in the public `ButtonProps` but aren't re-exported from
-  `react-aria-components`, so a project emitting declarations around `Button` fails with TS2883.
-
 ### Contact
 
 [Telegram](https://t.me/sobolpe) · sobol4156@gmail.com
