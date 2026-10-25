@@ -3,16 +3,27 @@
 Senior Fullstack Engineer, 6 years in production. I lead frontend work on [AI/ML API](https://aimlapi.com)
 at Boiler Labs — a platform that serves 1000+ AI models behind a single OpenAI-compatible endpoint.
 
-Frontend is where I'm deepest — Vue 3 / Nuxt 3 and TypeScript — but I own features end to end: the
+Frontend is where I'm deepest — React / Next.js, Vue 3 / Nuxt 3 and TypeScript — but I own features end to end: the
 NestJS service, the Postgres migration and the CI pipeline are mine when that's what shipping takes.
 Most of my work is the unglamorous half of a product people actually pay for: SSR that doesn't flicker,
 checkout flows that survive real payment providers, and pages that stay fast when the API doesn't
 cooperate.
 
-**Stack** — TypeScript · Vue 3 / Nuxt 3 · React / Next.js · NestJS · PostgreSQL · ClickHouse · Docker · GitHub Actions
+**Stack** — TypeScript · React / Next.js · Vue 3 / Nuxt 3 · NestJS · PostgreSQL · ClickHouse · Docker · GitHub Actions
 
 ### Open source
 
+- [**TanStack Query** #11128](https://github.com/TanStack/query/pull/11128) — merged. `thenable.ts` is
+  used by hydration, the retryer and `QueryObserver` but had no tests of its own. I wrote a unit suite
+  for it, and the suite surfaced a defect: a caller that kept a reference to `resolve`/`reject` could
+  settle the promise again after it had already settled. Fixed it in the same PR.
+- [**react-spectrum** #10366](https://github.com/adobe/react-spectrum/pull/10366) — merged.
+  `react-aria-components` didn't re-export `FocusableElement`, `HoverEvent` and `KeyboardEvent`, though
+  all three appear in the public `ButtonProps`, so consumer projects couldn't emit portable declarations.
+- [**nitro** #4491](https://github.com/nitrojs/nitro/pull/4491) — merged. Two prerender routes can
+  resolve to one output file (`/other` and `/other/index.html`), and the page that shipped was whichever
+  render finished last, with no warning. Nitro now tracks which route claimed each file and a hash of its
+  contents: identical output is skipped silently, different output keeps the first route and warns.
 - [**recharts** #7582](https://github.com/recharts/recharts/pull/7582) — merged. Bars ignored the
   requested `barGap` whenever `maxBarSize` clamped the computed width. Open for 4.5 years; fixed with
   unit tests and a visual-regression case.
